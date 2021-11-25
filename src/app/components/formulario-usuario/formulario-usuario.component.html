@@ -1,0 +1,31 @@
+<div class="contenedor">
+    <h1>{{usuarioActualizar ? 'Actualizar Usuario' : 'Agregar usuario'}}</h1>
+    <form [formGroup]="formGroup">
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Nombres*</label>
+          <input type="text" class="form-control" formControlName="nombres">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Apellidos*</label>
+          <input type="text" class="form-control" formControlName="apellidos">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email*</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password*</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="contra">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Grado*</label>
+          <input type="text" class="form-control" formControlName="grado">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Edad*</label>
+          <input type="text" class="form-control" formControlName="edad">
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="formGroup.invalid" (click)="registrar()" *ngIf="!usuarioActualizar">Enviar</button>
+        <button type="submit" class="btn btn-primary" [disabled]="formGroup.invalid" (click)="actualizarUsuario()" *ngIf="usuarioActualizar">Actualizar</button>
+    </form>
+</div>
