@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { UsuariobeModel } from 'src/app/models/usuariobe';
 import { UsuariobeService } from 'src/app/services/usuariobe.service';
@@ -10,11 +10,15 @@ import { UsuariobeService } from 'src/app/services/usuariobe.service';
 })
 export class TablaUsuariobeComponent implements OnInit {
 
+  @Input() subtitulo: string = '';
+  @Output() mostrarAlerta = new EventEmitter();
+
   public usuariobe: UsuariobeModel[] = [];
 
   constructor(private usuariobeService: UsuariobeService, private router: Router) { }
 
   async ngOnInit(): Promise<void> {
+    console.log(this.subtitulo);
     localStorage.clear();
     this.usuariobe = await this.listar();
     
@@ -34,7 +38,7 @@ export class TablaUsuariobeComponent implements OnInit {
     this.usuariobeService.eliminarUsuario(id).then(async response => {
       if(response.message === 'deleted'){
         this.usuariobe = await this.listar();
-        alert('Usuario eliminado correctamente')
+        this.mostrarAlerta.emit({mostrarAlert: true});
       }
     }).catch(error => {
       this.router.navigate(['/error']);
