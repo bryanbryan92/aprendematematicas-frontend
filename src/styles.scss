@@ -1,1 +1,1139 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url("./assets/imagenes/fondo3.png");
+    height: 500px;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    
+  }
+  
+  h1{
+    font-size: 60px;
+    color: black;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  h2{
+    font-size: 30px;
+    color: white;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .h1reg{
+    font-size: 30px;
+    color: black;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  footer {
+    width:100%;
+    background: white;
+    height: 70px;
+    border-top: 2px solid rgba(0, 0, 0, 0.24);  
+    /*  poner footer abajo */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+  }
+  
+  footer p{
+    color: black;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: 'Gorditas', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  hr{
+    background: #B9A8E9;
+    width:100%;
+    height:30px;
+    margin:auto;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    width:100%;
+    background: #B9A8E9;
+    height:70px;
+  
+  }
+  
+  .ancho{
+    width:95%;
+    height:70px;
+    margin:auto;
+  }
+  
+  .logo{
+    width:20%;
+    height:70px;
+    float:left;
+  }
+  
+  nav{
+    text-align: right;
+    width:80%;
+    height:70px;
+    margin:auto;
+    float:right;
+    padding-top: 15px;
+  }
+
+ 
+  
+  .logo a img{
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+  }
+  
+  nav ul li{
+    display: inline;
+  }
+  
+  nav ul li a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Gorditas', cursive;
+    text-transform: uppercase;
+    padding-left:30px;
+  }
+  
+  nav ul li img{
+    width:45px;
+    height:45px;
+    float:right;
+  }
+  
+  nav ul li a:hover{
+    color: #005C13;
+  }
+  
+  div img{
+    width: 100%;
+  }
+  
+  .contenedor{
+      position: relative;
+      display: inline-block;
+      text-align: center;
+  }
+  .texto{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+  }
+  .centrado{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      color: #005C13;
+      font-family: 'Gorditas', cursive;
+  }
+  
+  .bcentrado{
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      color: #005C13;
+      font-family: 'Gorditas', cursive;
+  }
+  
+  .bcentrado button{
+    border-radius: 20px;
+    border: 2px solid #005C13;
+    background-color: #B9A8E9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 400px;
+    height: 80px;
+    font-size: 50px;
+    color: #005C13;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+  }
+  
+  .titulo p{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-family: 'Gorditas', cursive;
+    margin-top: 30px;
+    text-decoration-line: underline;
+    text-decoration-color: #B9A8E9;
+  }
+  
+  .seccion {
+    display: table;
+    height:250px;
+    width:90%;
+    background: #B9A8E9;
+    margin:0 auto;
+    border-radius: 20px;
+    opacity: 0.9;
+  }
+  
+  .seccion table tr th img{
+    width:250px;
+    height:250px;
+  }
+  
+  .seccion table tr th p{
+    width:500px;
+    height:250px;
+    text-align: center;
+    font-family: 'Gorditas', cursive;
+    color: black;
+    font-size: 40px;
+  
+    vertical-align: middle;
+  }
+  /******************************************************************/
+  
+  /*Tabla datos del perfil */
+  .seccionDatos {  display: table;   height:250px;  width:90%;  background: #B9A8E9;
+    margin:0 auto;  border-radius: 20px;  opacity: 0.9;  align: center; }
+  .seccionDatos table{ margin: 0 auto;  border-collapse: separate; border-spacing: 20px 20px;}
+  .seccionDatos h3{ font-family: 'Gorditas', cursive;  color: black;     font-size: 30px; margin-left:2em; text-align: left;}
+  .seccionDatos h2{ font-family: 'Gorditas', cursive;  color: white;   font-size: 30px; margin-left:2em; text-align: left;}
+  .seccionDatos h1{ font-family: 'Gorditas', cursive;  color: yellow;     font-size: 50px;  text-align: center; margin-top: 0.5em;}
+  /*Hasta aqui tabla datos del perfil */
+  
+  /*Seccion Progreso*/
+  .seccionProgreso {  display: table;   height:500px;  width:90%;  background: #5DE0B5;
+    margin:0 auto;  border-radius: 20px;  opacity: 0.9;  align: center; }
+  .seccionProgreso table{ margin: 0 auto;  border-collapse: separate; border-spacing: 20px 20px;}
+  .seccionProgreso h3{font-family: 'Gorditas', cursive;  color: white;     font-size: 30px; margin-left:2em; text-align: center;}
+  .seccionProgreso h2{ font-family: 'Gorditas', cursive;  color: black;   font-size: 30px; margin-left:2em; text-align: center;}
+  .seccionProgreso h1{ font-family: 'Gorditas', cursive;  color: yellow;     font-size: 50px;  text-align: center; margin-top: 0.7em; margin-bottom: 0.7em;}
+  
+  /*Select de grados*/
+  .content-select select{/*para es epcificar que la apariencia no sera por defecto sino por css*/
+      appearance: none; 	-webkit-appearance: none;	-moz-appearance: none;}
+  
+  .content-select select::-ms-expand {display: none;}/*para edictar la apariencia de la flecha*/
+      
+  .content-select{ max-width: 350px; position: relative; }
+   
+  .content-select select{	display: inline-block; 	width: 100%; cursor: pointer;  padding: 7px 10px;
+        height: 42px;  	outline: 0; border: 0; 	border-radius: 0; background: #fff;
+      color: #7b7b7b;	font-size: 1em;	color: #999; font-family: 'Quicksand', sans-serif;
+      border:1px solid #0a5c8f; border-radius: 12px;    position: relative;    transition: all 0.25s ease;
+  }
+   
+  .content-select select:hover{	background: #fff;}
+   
+  /* Creamos la fecha que aparece a la izquierda del select.
+  Realmente este elemento es un cuadrado que sólo tienen
+  dos bordes con color y que giramos con transform: rotate(-45deg);*/
+  .content-select i{	position: absolute;	right: 20px;	top: calc(50% - 13px);	width: 16px;	height: 16px;
+      display: block;	border-left:4px solid #B9A8E9;	border-bottom:4px solid #B9A8E9; transform: rotate(-45deg); /* Giramos el cuadrado */
+      transition: all 0.25s ease; }
+   
+  .content-select:hover i{margin-top: 3px;}
+  /*fin select grados*/
+  
+  /*Contenedor Log reg inv*/
+  .contPrin {height:250px;  width:100%;  margin:0 auto; margin-left: 8em; }
+  .contPrin img{width:25%; margin-right: 1em; margin-left: 1em;}
+  
+  /*BARRA PROGRESO*/
+  .barra {margin-left: 4em; margin-right: 1em;}
+  
+  /*INPUT REINICIA GRADO*/
+  .reiniciaGrado {margin:0 auto; background-color: white; width: 100px; height: 40px; border-radius: 20px; border: 2px solid #B9A8E9; margin-left: 5em;}
+  
+  
+  /******************************************************************/
+  .seccion1 {
+    display: table;
+    height:50px;
+    width:90%;
+    // background: white;
+    margin:0 auto;
+    border-radius: 20px;
+    opacity: 0.8;
+  }
+  
+  .seccion1 table tr th img{
+    width: 250px;
+    height: 250px;
+  }
+  
+  .seccion1 table tr th p{
+    width:500px;
+    height:250px;
+    text-align: center;
+    font-family: 'Gorditas', cursive;
+    color: black;
+    font-size: 40px;
+  
+    vertical-align: middle;
+  }
+  
+  .centrado1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      color: #005C13;
+      font-family: 'Gorditas', cursive;
+  }
+  
+  #formulario *{box-sizing:border-box; margin:0; padding:0;}
+  #formulario h1{ line-height:3em; text-align:center; color:black; font-family: 'Gorditas', cursive;}
+  #formulario{ border:3px solid #B9A8E9; width:350px; background-color:white; margin:30px auto;border-radius: 20px;}
+  #formulario fieldset{  width:100%; padding:40px; background-color:#B9A8E9; border-radius: 20px;border:3px solid #B9A8E9;}
+  #formulario p label{ display:block;margin-bottom:.5em; color:white; font-family: 'Gorditas', cursive;}
+  #formulario input{height:40px; background:none; border:1px solid #0a5c8f; border-radius:10px; padding:0 1em;width:100%;margin-bottom:1em; background-color:white;}
+  #formulario input:focus{outline:none;box-shadow : 0px 0px 5px 1px #0a5c8f; }
+  #formulario input[type = 'text']{}
+  #formulario input[type = 'button']{ margin-top:1.5em; height:50px; background-color:orange; font-size:100%; font-family: 'Gorditas', cursive;}
+  #formulario label[ for = 'nombre']:after,
+  #formulario label[ for = 'dir']:after{ content:"\02a"; color:red; font-size:20px;  text-shadow : 0px 0px 2px #fff; }
+  
+  @keyframes sacudida {
+    0% { transform:translateX(0px);}
+    20% {transform:translateX(15px);}
+    40% {transform:translateX(-15px);}
+    60% {transform:translateX(15px);}
+    80% {transform:translateX(-15px);}
+    100% {transform:translateX(0px);}
+  }
+  @-webkit-keyframes sacudida {
+    0% {transform:translateX(0px);}
+    20% {transform:translateX(15px);}
+    40% {transform:translateX(-15px);}
+    60% {transform:translateX(15px);}
+    80% {transform:translateX(-15px);}
+    100% {transform:translateX(0px);}
+  }
+  #formulario .requerido.sacudir{
+      background-color:#ff3d00;
+      -webkit-animation:sacudida 0.3s;
+      animation:sacudida 0.3s;
+  }
+  
+  
+  .seccion button{
+    border-radius: 20px;
+    border: 2px solid #B9A8E9;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    color: #005C13;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .seccion img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .seccion .practicar {
+    width: 100px;
+    height: 100px;
+    margin:auto;
+  }
+  
+  .seccion h1{
+    font-size: 30px;
+    color: white;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .seccion1 h1{
+    font-size: 30px;
+    color: #B9A8E9;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    text-align: center;
+    opacity: 1;
+  }
+  
+  .seccion1 td button{
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #005C13;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    color: #B9A8E9;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    margin: auto;
+  }
+
+  .seccion1 button{
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #005C13;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 500px;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+    .btnregistro{
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #005C13;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 30px;
+    
+    }
+  
+  .seccion1 img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .seccion1 .practicar {
+    width: 100px;
+    height: 100px;
+    margin:auto;
+  }
+  
+  #slider-wrapper {
+    width: 940px;
+    height: 470px;
+    margin: 50px auto;
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  #s1 {
+    padding: 10px;
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -46px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s2 {
+    padding: 10px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s3 {
+    padding: 10px;
+    background: blue;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 22px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s4 {
+    padding: 10px;
+    background: green;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 56px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s5 {
+    padding: 10px;
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -46px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s6 {
+    padding: 10px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s7 {
+    padding: 10px;
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -46px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s8 {
+    padding: 10px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s9 {
+    padding: 10px;
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -46px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s10 {
+    padding: 10px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s11 {
+    padding: 10px;
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -46px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s12 {
+    padding: 10px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s13 {
+    padding: 10px;
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -46px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s14 {
+    padding: 10px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s15 {
+    padding: 10px;
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -46px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s16 {
+    padding: 10px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s17 {
+    padding: 10px;
+    background: blue;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 22px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s18 {
+    padding: 10px;
+    background: green;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 56px;
+    border-radius: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s1:hover,
+  #s2:hover,
+  #s3:hover,
+  #s4:hover,
+  #s5:hover,
+  #s6:hover,
+  #s7:hover,
+  #s8:hover,
+  #s9:hover,
+  #s10:hover,
+  #s11:hover,
+  #s12:hover,
+  #s13:hover,
+  #s14:hover,
+  #s15:hover,
+  #s16:hover,
+  #s17:hover,
+  #s18:hover {
+    opacity: .50;
+  }
+  
+  .inner-wrapper {
+    width: 940px;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .control {
+    display: none;
+  }
+  
+  #Slide1:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide2:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide3:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+  }
+  
+  #Slide4:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+  }
+  
+  #Slide5:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide6:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide7:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide8:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide9:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide10:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide11:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide12:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide13:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide14:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide15:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide16:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide17:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+  }
+  
+  #Slide18:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+  }
+  
+  #Slide1:checked + #s1 {
+    opacity: 1;
+  }
+  
+  #Slide2:checked + #s2 {
+    opacity: 1;
+  }
+  
+  #Slide3:checked + #s3 {
+    opacity: 1;
+  }
+  
+  #Slide4:checked + #s4 {
+    opacity: 1;
+  }
+  
+  #Slide5:checked + #s5 {
+    opacity: 1;
+  }
+  
+  #Slide6:checked + #s6 {
+    opacity: 1;
+  }
+  
+  #Slide7:checked + #s7 {
+    opacity: 1;
+  }
+  
+  #Slide8:checked + #s8 {
+    opacity: 1;
+  }
+  
+  #Slide9:checked + #s1 {
+    opacity: 1;
+  }
+  
+  #Slide10:checked + #s2 {
+    opacity: 1;
+  }
+  
+  #Slide11:checked + #s3 {
+    opacity: 1;
+  }
+  
+  #Slide12:checked + #s4 {
+    opacity: 1;
+  }
+  
+  #Slide13:checked + #s5 {
+    opacity: 1;
+  }
+  
+  #Slide14:checked + #s6 {
+    opacity: 1;
+  }
+  
+  #Slide15:checked + #s7 {
+    opacity: 1;
+  }
+  
+  #Slide16:checked + #s8 {
+    opacity: 1;
+  }
+  
+  #Slide17:checked + #s7 {
+    opacity: 1;
+  }
+  
+  #Slide18:checked + #s8 {
+    opacity: 1;
+  }
+  
+  .overflow-wrapper {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .slide img {
+    width: 25%;
+    float: left;
+    border-radius: 20px;
+  }
+  
+  .overflow-wrapper .slide table{
+    width: 940px;
+    height: 470px;
+    margin: 0;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .overflow-wrapper .slide table td{
+    width: 940px;
+    height: 280px;
+    margin:auto;
+    border: 1px solid white;
+    display: block;
+    border-radius: 20px;
+    }
+  
+    .overflow-wrapper .slide .tdimg{
+      width: 940px;
+      height: 280px;
+      margin:auto;
+      border: 1px solid white;
+      display: block;
+      border-radius: 20px;
+      }
+  
+  .overflow-wrapper .slide .script div{
+    width: 940px;
+    height: 250px;
+    margin-left: 340px;
+    border-radius: 20px;
+  }
+  
+  .overflow-wrapper .slide .scriptsum div{
+    width: 940px;
+    height: 250px;
+    margin-left: 130px;
+    border-radius: 20px;
+  }
+  
+  
+  .overflow-wrapper .slide .comprobar{
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  .overflow-wrapper .slide .comprobar input{
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    font-size: 30px;
+    color: blue;
+    font-family: 'Gorditas', cursive;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #B9A8E9;
+  
+  }
+  
+  .jugar{
+    width: 1000px;
+    height:auto;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .juegos{
+    margin: auto;
+    text-align: center;
+  }
+  
+  .juegos tr{
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  .juegos tr td{
+    width: auto;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #B9A8E9;
+    padding: 20px;
+    opacity: 0.8;
+  }
+  
+  .juegos tr td iframe{
+    width: 800px;
+    height: 600px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .juegos tr td p{
+    width: 800px;
+    height: 100px;
+    margin: auto;
+    padding: 30px;
+    font-size: 25px;
+    color: black;
+    font-family: 'Gorditas', cursive;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .eval {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .pregunta {
+    color: black;
+    font-size: 40px;
+    font-family: 'Gorditas', cursive;
+    text-align: center;
+  }
+  
+  .evaluacion {
+    color: #B9A8E9;
+    font-size: 50px;
+    font-family: 'Gorditas', cursive;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .respuesta {
+    color: green;
+    font-size: 30px;
+    font-family: 'Gorditas', cursive;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+  }
+  
+  .radio {
+    width: 40px;
+    height: 40px;
+    display: inline-grid;
+    margin: 10px;
+    text-decoration: none;
+  
+  }
+  
+  .responder {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+  }
+  
+  .botonEval {
+    border-radius: 20px;
+    border: 2px solid #B9A8E9;
+    background-color:#B9A8E9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 500px;
+    height: 60px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Gorditas', cursive;
+    text-decoration: none;
+    text-align: center;
+    margin:auto;
+  }
+  
+  .botoncentrar {
+    text-align: center;
+  }
+  
+  .seccion .image1 {
+    width: 300px;
+    height: 300px;
+    margin:auto;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .seccion1 .image1 {
+    width: 300px;
+    height: 300px;
+    margin:auto;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .container {
+    text-align: left;
+    padding-left: 20%;
+    display: flex;
+  }
+  
+  .explicar{
+    font-size: 30px;
+    color: red;
+    font-family: 'Gorditas', cursive;
+  }
+  
+  .overflow-wrapper .slide .scriptsum .operadorimg{
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+  }
+
+  .table {
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    align-content: center;
+    
+}
+
+.tabla {
+    border-color: black;
+    border-radius: 5px;
+}
+
+.tabla thead tr{
+    width: 80%;
+    font-family:  oswald;
+    background-color: #005C13;
+    opacity: 0.8;
+    font-size: 20px;
+    padding: 3px;
+    color: white;
+    border-radius: 10px;
+}
+
+.tabla tbody tr{
+    
+    font-family:  oswald;
+    background-color: #B9A8E9;
+    font-size: 20px;
+    color: black;
+    padding: 3px;
+    height: 60px;
+}

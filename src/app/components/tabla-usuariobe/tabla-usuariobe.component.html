@@ -1,4 +1,5 @@
-<table class="table">
+<div class="table">
+<table class="tabla">
     <thead>
       <tr>
         <th scope="col">nombres</th>
@@ -7,7 +8,8 @@
         <th scope="col">contra</th>
         <th scope="col">grado</th>
         <th scope="col">edad</th>
-        <th scope="col">idusuario</th>
+        <th scope="col">ID</th>
+        <th scope="col">Acciones</th>
       </tr>
     </thead>
     <tbody>
@@ -19,8 +21,11 @@
         <td>{{usuario.grado}}</td>
         <td>{{usuario.edad}}</td>
         <td>{{usuario.idusuario}}</td>
-        <td><button type="button" class="btn btn-danger" (click)="eliminarUsuario(usuario.idusuario)">Eliminar</button></td>
-        <td><button type="button" class="btn btn-outline-success" (click)="irActualizarUsuario(usuario)">Actualizar</button></td>
+        <div class="seccion1"> 
+        <td><button type="button" class="btn btn-danger" (click)="eliminarUsuario(usuario.idusuario)">Eliminar</button>
+        <button type="button" class="btn btn-outline-success" (click)="irActualizarUsuario(usuario)">Actualizar</button></td>
+        </div>
       </tr>
     </tbody>
   </table>
+</div>

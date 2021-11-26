@@ -1,31 +1,51 @@
-<div class="contenedor">
-    <h1>{{usuarioActualizar ? 'Actualizar Usuario' : 'Agregar usuario'}}</h1>
-    <form [formGroup]="formGroup">
-        <div class="mb-3">
-          <label for="exampleInputName" class="form-label">Nombres*</label>
-          <input type="text" class="form-control" formControlName="nombres">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Apellidos*</label>
-          <input type="text" class="form-control" formControlName="apellidos">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email*</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password*</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="contra">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Grado*</label>
-          <input type="text" class="form-control" formControlName="grado">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Edad*</label>
-          <input type="text" class="form-control" formControlName="edad">
-        </div>
-        <button type="submit" class="btn btn-primary" [disabled]="formGroup.invalid" (click)="registrar()" *ngIf="!usuarioActualizar">Enviar</button>
-        <button type="submit" class="btn btn-primary" [disabled]="formGroup.invalid" (click)="actualizarUsuario()" *ngIf="usuarioActualizar">Actualizar</button>
-    </form>
-</div>
+<form id="formulario" [formGroup]="formGroup">
+  
+  <h1 class="h1reg">{{usuarioActualizar ? 'Actualizar Usuario' : 'Agregar usuario'}}</h1>
+  <fieldset>
+      <p>
+          <label for="nombre">NOMBRES:</label>
+          <input type="text" class="requerido" formControlName="nombres">
+      </p>
+      <p>
+          <label for="nombre">APELLIDOS:</label>
+          <input type="text" class="requerido" formControlName="apellidos">
+      </p>
+      <p>
+          <label for="nombre">EMAIL:</label>
+          <input type="text" class="requerido"  formControlName="email">
+      </p>
+      <p>
+          <label for="nombre">CONTRASEÑA:</label>
+          <input type="password" class="requerido"  formControlName="contra">
+      </p>
+      <p>
+          <label>EDAD:</label>
+          <input type="text" class="requerido"  formControlName="edad" maxlength="2"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+      </p>
+      <p>
+          <label class="requerido">GRADO:</label>
+      </p>
+          <div class="content-select">
+              <select formControlName="grado">
+
+              <option>Seleccione</option>    
+              <option>Preescolar</option>
+              <option>Primero</option>
+              <option>Segundo</option>
+              <option>Tercero</option>
+              <option>Cuarto</option>
+              <option>Quinto</option>
+              <option>Otro</option>
+
+              </select>
+              <i></i>
+          </div>
+      <br><br>
+      
+    <div>
+            <button type="submit" class="btnregistro" [disabled]="formGroup.invalid" (click)="registrar()" *ngIf="!usuarioActualizar">Enviar</button>
+            <button type="submit" class="btnregistro" [disabled]="formGroup.invalid" (click)="actualizarUsuario()" *ngIf="usuarioActualizar">Actualizar</button>
+    </div>
+      
+  </fieldset>
+</form>
